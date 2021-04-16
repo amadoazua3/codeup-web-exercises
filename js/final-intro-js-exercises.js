@@ -162,8 +162,19 @@ perplexed + 2; // NaN
 // the username must be no longer than 20 characters
 // neither the username or password can start or end with whitespace
 
-var username = 'codeup';
-var password = 'notastrongpassword';
-
+// var username = 'codeup';
+// var password = 'notastrongpassword';
+// var validUsername;
+// var validPassword;
+//
+// if(password.length > 5 && password != username && password.trim()){
+//     validPassword = true;
+//     console.log("Your password is valid.");
+// }
+//
+// if(username.length <= 20 && username.trim()) {
+//     validUsername = true;
+//     console.log("Your username is valid.");
+// }
 
 
