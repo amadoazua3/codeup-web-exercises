@@ -156,6 +156,12 @@ perplexed + 2; // NaN
 
 //------------------------------------- Exercise 4
 
+// TODO: create a variable that holds a boolean value for each of the following conditions
+// the password must be at least 5 characters
+// the password must not include the username
+// the username must be no longer than 20 characters
+// neither the username or password can start or end with whitespace
+
 var username = 'codeup';
 var password = 'notastrongpassword';
 
