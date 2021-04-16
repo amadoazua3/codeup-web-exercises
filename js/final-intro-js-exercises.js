@@ -85,7 +85,7 @@ perplexed + 2; // NaN
 // console.log(!!"0"); // result : true
 
 //-------------------------------- Exercise 2
-
+//
 // var sample = "Hello Codeup";
 //
 // console.log(sample.length); // # of characters in sample is 12
@@ -102,7 +102,7 @@ perplexed + 2; // NaN
 // console.log(sampleStudents.indexOf("C")); // returns a value of 6, C is the 7th character in the string
 //
 // console.log(sampleStudents.indexOf("Codeup"));
-// console.log(sampleStudents.substring(6, 12)); // retrieves a substring only containing "Codeup"
+// console.log(sampleStudents.substring(sampleStudents.indexOf("Codeup"), sampleStudents.indexOf("C") + "Codeup".length)); // retrieves a substring only containing "Codeup"
 
 
 //--------------------------------- Exercise 3
