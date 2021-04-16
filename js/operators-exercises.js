@@ -21,3 +21,4 @@ console.log('codeup' === 'codeup' && 'codeup' === 'Codeup'); // result false
 console.log(4 >= 0 && 1 !== '1'); // result true
 console.log(6 % 3 === 0); // result true
 console.log(5 % 2 !== 0); //result true
+
