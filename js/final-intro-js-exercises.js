@@ -167,14 +167,18 @@ perplexed + 2; // NaN
 // var validUsername;
 // var validPassword;
 //
-// if(password.length > 5 && password != username && password.trim()){
+// if(password.length > 5 && password != username && password[0] != " " && password.length-1 != " "){
 //     validPassword = true;
 //     console.log("Your password is valid.");
+// }else{
+//     console.log("Your password is invalid.");
 // }
 //
-// if(username.length <= 20 && username.trim()) {
+// if(username.length <= 20 && username[0] != " " && username.length-1 != " ") {
 //     validUsername = true;
 //     console.log("Your username is valid.");
+// }else{
+//     console.log("Your username is invalid.")
 // }
 
 
