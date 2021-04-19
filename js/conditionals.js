@@ -238,25 +238,33 @@
          * HINT: The way we prompt for a value could be improved
          */
 
-        var userConfirmation = confirm("Would you like to enter a number?");
-        var userInput = prompt("Please enter a number: ");
-
-
-        if(userInput % 2 === 0){
-            alert("Your number " + userInput + " is an even number");
-        }else{
-            alert("Your number " + userInput + " is an odd number");
-        }
-
-        if(Number.isInteger(userInput) === false){
-            alert("Please input a number. " + userInput + " is not a number.");
-        }
-
-
-
-
-
-
+        // var userConfirmation = confirm("Would you like to enter a number?");
+        // var userInput = prompt("Please enter a number: ");
+        // var calculation = parseInt(userInput);
+        // var plusHundred = calculation + 100;
+        //
+        // if(isNaN(userInput)){
+        //     alert("Please input a number. " + userInput + " is not a number.");
+        // }
+        // else if(userInput > 0 && userInput % 2 === 0){
+        //     alert("Your number " + userInput + " is an even number");
+        //     alert("Your number " + userInput + " is a positive number");
+        //     alert("Your number " + userInput + " plus 100 is: " + plusHundred);
+        // }else if (userInput > 0 && userInput % 2 !== 0){
+        //     alert("Your number " + userInput + " is an odd number");
+        //     alert("Your number " + userInput + " is a positive number");
+        //     alert("Your number " + userInput + " plus 100 is: " + plusHundred);
+        // }else if(userInput < 0 && userInput % 2 === 0){
+        //     alert("Your number " + userInput + " is an even number");
+        //     alert("Your number " + userInput + " is a negative number");
+        //     alert("Your number " + userInput + " plus 100 is: " + plusHundred);
+        // }else if(userInput < 0 && userInput % 2 !== 0){
+        //     alert("Your number " + userInput + " is an odd number");
+        //     alert("Your number " + userInput + " is a negative number");
+        //     alert("Your number " + userInput + " plus 100 is: " + plusHundred);
+        // }else{
+        //
+        // }
 
 }
 )()
