@@ -94,7 +94,7 @@
 
         }
 
-        console.log(calculateTip(0.15, 33.42));
+        console.log(calculateTip(0.15, 33.42).toFixed(2));
 
 
         /**
@@ -108,7 +108,7 @@
         var billTotal = prompt("What is your bill total?");
         var tipPercentage = prompt("What percentage would you like to tip?");
 
-        var tipTotal = (calculateTip(billTotal, tipPercentage));
+        var tipTotal = (calculateTip(billTotal, tipPercentage).toFixed(2));
         alert("Your total tip amount is $" + tipTotal);
 
         /**
@@ -133,7 +133,7 @@
                 return total;
         }
 
-        console.log(applyDiscount(45.99,0.12));
+        console.log(applyDiscount(45.99,0.12).toFixed(2));
 
     }
 )()
