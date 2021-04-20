@@ -41,7 +41,7 @@
     //
     // }
     //
-    // analyzeColor("blue".toLowerCase());
+    // analyzeColor("red".toLowerCase());
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -93,7 +93,8 @@
     //         }
     //
     //     }
-    //analyzeColor(randomColor.toLowerCase());
+    //
+    // analyzeColor(randomColor.toLowerCase());
 
 
         /**
