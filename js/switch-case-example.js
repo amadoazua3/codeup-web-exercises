@@ -32,9 +32,7 @@ function getBodyStyle(input) {
             break;
     }
 
-    if(){
-        getBodyStyle();
-    }
+
 
 
 }
@@ -42,7 +40,15 @@ function getBodyStyle(input) {
 function getVehicleType(input){
 
     switch (input){
-
+        case "sedan":
+            alert("Vehicle type is a sedan");
+            break;
+        case "truck":
+            alert("Vehicle type is a truck");
+            break;
+        default:
+            alert("Error: Not a valid vehicle type!");
+            break;
 
     }
 
@@ -51,7 +57,17 @@ function getVehicleType(input){
 function getVehicleColor(input){
 
     switch (input){
-
+        case "white":
+            alert("Vehicle body color is white");
+            break;
+        case "red":
+            alert("Vehicle body color is red");
+            break;
+        case "blue":
+            alert("Vehicle body color is blue");
+        default:
+            alert("Error: Not a valid body color!");
+            break;
 
 
     }
