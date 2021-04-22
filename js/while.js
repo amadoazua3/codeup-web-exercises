@@ -33,24 +33,6 @@
 
 //----------------------------------------------
 
-// This is how you get a random number between 50 and 100
-var allCones = Math.floor(Math.random() * 50) + 50;
-// This expression will generate a random number between 1 and 5
-var random = Math.floor(Math.random() * 5) + 1;
-
-do{
-
-    allCones = allCones - random;
-    console.log(random);
-    console.log("-----------------");
-    console.log(`We have ${allCones} left`);
-
-    if(allCones < random || allCones === 0){
-        console.log("Sorry we don't have enough");
-        break;
-    }
-
-}while(allCones >= 1)
 
 
 
