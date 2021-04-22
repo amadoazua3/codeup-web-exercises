@@ -1,3 +1,5 @@
+"use strict";
+
 //region TODO: MINI EXERCISE -> SWITCH STATEMENTS
 
 // TODO: Let's make an application which helps a user input *validated* specs on a vehicle they are trying to sell:
@@ -17,68 +19,98 @@
 //  -> After all switch statement functions successfully return the user's input, concatenate them all into a nicely-formatted string and return all data to the user
 //endregion
 
-function getBodyStyle(input) {
 
-    switch (input){
+function getBodyStyle() {
 
-        case "2D":
-            alert("Vehicle body style is 2D");
-            break;
-        case "4D":
-            alert("Vehicle body style is 4D");
-            break;
-        default:
-            alert("Error: Not a valid body style!");
-            break;
-    }
+     let bodyStyleInput = prompt("Please enter a body style: ");
 
+        switch (bodyStyleInput.toUpperCase()) {
 
+            case "2D":
+                confirm("Vehicle body style is 2D");
+                //return bodyStyleInput;
+                break;
+            case "4D":
+                confirm("Vehicle body style is 4D");
+                //return bodyStyleInput;
+                break;
+            default:
+                alert("Error: " + bodyStyleInput + " is not a valid body style!");
+                failState("Error");
+                //getBodyStyle();
+                break;
+        }
+        console.log("bodyStyleInput is: " + bodyStyleInput);
+    return bodyStyleInput;
+}
 
+function getVehicleType() {
+
+    let vehicleTypeInput = prompt("Please enter a vehicle type: ");
+
+        switch (vehicleTypeInput.toLowerCase()) {
+            case "sedan":
+                confirm("Vehicle type is a sedan");
+                break;
+            case "truck":
+                confirm("Vehicle type is a truck");
+                break;
+            case "sports car":
+                confirm("Vehicle type is a sports car");
+                break;
+            case "compact":
+                confirm("Vehicle type is a compact");
+                break;
+            default:
+                alert("Error: " + vehicleTypeInput + " is not a valid vehicle type!");
+                getVehicleType();
+                break;
+
+        }
+    return vehicleTypeInput;
+}
+
+function getVehicleColor() {
+
+    let vehicleColorInput = prompt("Please enter a vehicle color: ");
+
+        switch (vehicleColorInput.toLowerCase()) {
+            case "white":
+                confirm("Vehicle body color is white");
+                break;
+            case "red":
+                confirm("Vehicle body color is red");
+                break;
+            case "blue":
+                confirm("Vehicle body color is blue");
+                break;
+            default:
+                alert("Error: " + vehicleColorInput + " is not a valid body color!");
+                getVehicleColor();
+                break;
+        }
+    return vehicleColorInput;
+}
+
+function concat() {
+
+    var bodyStyle = getBodyStyle();
+    var vehicleType = getVehicleType();
+    var vehicleColor = getVehicleColor();
+
+    alert("Your vehicle is a " + bodyStyle + " " + vehicleType + " that is " + vehicleColor);
 
 }
 
-function getVehicleType(input){
+function failState(str){
 
-    switch (input){
-        case "sedan":
-            alert("Vehicle type is a sedan");
-            break;
-        case "truck":
-            alert("Vehicle type is a truck");
-            break;
-        default:
-            alert("Error: Not a valid vehicle type!");
-            break;
+    if(str === "Error"){
 
+        getBodyStyle();
     }
 
 }
 
-function getVehicleColor(input){
-
-    switch (input){
-        case "white":
-            alert("Vehicle body color is white");
-            break;
-        case "red":
-            alert("Vehicle body color is red");
-            break;
-        case "blue":
-            alert("Vehicle body color is blue");
-        default:
-            alert("Error: Not a valid body color!");
-            break;
+concat();
 
 
-    }
-
-}
-
-var bodyStyleInput = prompt("Please enter a body style: ");
-getBodyStyle(bodyStyleInput);
-
-var vehicleTypeInput = prompt("Please enter a vehicle type: ");
-getVehicleType(vehicleTypeInput);
-
-var vehicleColorInput = prompt("Please enter a vehicle color: ");
-getVehicleColor(vehicleColorInput);
