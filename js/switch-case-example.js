@@ -36,8 +36,7 @@ function getBodyStyle() {
                 break;
             default:
                 alert("Error: " + bodyStyleInput + " is not a valid body style!");
-                failState("Error");
-                //getBodyStyle();
+                concat("Error");
                 break;
         }
         console.log("bodyStyleInput is: " + bodyStyleInput);
@@ -92,7 +91,7 @@ function getVehicleColor() {
     return vehicleColorInput;
 }
 
-function concat() {
+function concat(str) {
 
     var bodyStyle = getBodyStyle();
     var vehicleType = getVehicleType();
@@ -100,15 +99,7 @@ function concat() {
 
     alert("Your vehicle is a " + bodyStyle + " " + vehicleType + " that is " + vehicleColor);
 
-}
-
-function failState(str){
-
-    if(str === "Error"){
-
-        getBodyStyle();
-    }
-
+    if()
 }
 
 concat();
