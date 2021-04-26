@@ -29,14 +29,14 @@
     //      -> add the remainingDay of the week to the old array
     //  -> When the loop completes, console.log() the completed day of the week array
 
-    var days = ["Monday", "Tuesday", "Wednesday"];
-    var remainingWeek = ["Thursday", "Friday", "Saturday", "Sunday"];
-
-    remainingWeek.forEach(function (day){
-        days.push(day);
-    });
-
-    console.log(days);
+    // var days = ["Monday", "Tuesday", "Wednesday"];
+    // var remainingWeek = ["Thursday", "Friday", "Saturday", "Sunday"];
+    //
+    // remainingWeek.forEach(function (day){
+    //     days.push(day);
+    // });
+    //
+    // console.log(days);
 
 
 //--------------------------------------------------------
@@ -89,20 +89,58 @@
     //          -> consider how the methods you are using change state of the array
 
 
-    var newArray = [];
+    // var newArray = [];
+    //
+    // function reversedEngineering(days){
+    //
+    //     for(var i = 0; i < days.length+1; i++){
+    //         newArray.unshift(days.pop());
+    //         console.log(newArray);
+    //        // console.log(days.length);
+    //         i = 0;
+    //     }
+    //     console.log("The element at index 0 is: " + newArray[0]);
+    // }
+    //
+    // reversedEngineering(days);
 
-    function reversedEngineering(days){
+//------------------------------------------
 
-        for(var i = 0; i < days.length+1; i++){
-            newArray.unshift(days.pop());
-            console.log(newArray);
-           // console.log(days.length);
-            i = 0;
-        }
-        console.log("The element at index 0 is: " + newArray[0]);
-    }
+    // function sortMyNums(num1, num2, num3){
+    //     var numArray = [num1, num2, num3];
+    //     console.log(numArray);
+    //     numArray.sort(function (a, b){
+    //         console.log(a);
+    //         console.log(b);
+    //         console.log(a - b);
+    //         return a - b;
+    //     });
+    //     console.log(numArray);
+    //     return numArray;
+    // }
+    //
+    // sortMyNums(13,1,1009);
 
-    reversedEngineering(days);
+
+    // function giveMissyJustice(notASuspectString){
+    //
+    //     var musicalGenius = notASuspectString.split('');
+    //
+    //     console.log(musicalGenius);
+    //
+    //     //musicalGenius.reverse();
+    //
+    //     console.log(musicalGenius.reverse());
+    //
+    //     var reversedString = musicalGenius.join('');
+    //
+    //     console.log(reversedString);
+    //
+    //
+    //
+    // }
+    //
+    // giveMissyJustice("I put my string down, flip it and reverse it");
 
 
 
