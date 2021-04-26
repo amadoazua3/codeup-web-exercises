@@ -30,9 +30,9 @@
     //  -> When the loop completes, console.log() the completed day of the week array
 
     // var days = ["Monday", "Tuesday", "Wednesday"];
-    // var days2 = ["Thursday", "Friday", "Saturday", "Sunday"];
+    // var remainingWeek = ["Thursday", "Friday", "Saturday", "Sunday"];
     //
-    // days2.forEach(function (day){
+    // remainingWeek.forEach(function (day){
     //     days.push(day);
     // });
     //
