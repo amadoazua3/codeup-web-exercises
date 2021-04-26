@@ -7,7 +7,7 @@
      * 'names'.
      */
 
-    var names = ["Chiaki", "Daoko", "Lionel", "Suga"];
+    // var names = ["Chiaki", "Daoko", "Lionel", "Suga"];
 
 
     /**
