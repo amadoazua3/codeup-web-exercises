@@ -67,22 +67,22 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    var arr = [1, 2, 3, 4, 5, 6, 7];
-
-    function first(arr){
-        console.log(arr[0]);
-    }
-
-    function second(arr){
-        console.log(arr[1]);
-    }
-
-    function last(arr){
-        console.log(arr[arr.length-1]);
-    }
-
-    first(arr);
-    second(arr);
-    last(arr);
+    // var arr = [1, 2, 3, 4, 5, 6, 7];
+    //
+    // function first(arr){
+    //     console.log(arr[0]);
+    // }
+    //
+    // function second(arr){
+    //     console.log(arr[1]);
+    // }
+    //
+    // function last(arr){
+    //     console.log(arr[arr.length-1]);
+    // }
+    //
+    // first(arr);
+    // second(arr);
+    // last(arr);
 
 })();
