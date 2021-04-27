@@ -270,41 +270,41 @@
 
 //----------------------------------------------------MINI EXERCISE
 
-var theSpurs = {
-        city: "SA",
-        coach: 'gregg',
-        wins: 5,
-        players: ["one", "two", "tim duncan", "manu", "david robinson"],
-        playerInfo: [
-            {
-                name: "Tim",
-                age: 40,
-                mvp: 3
-            },
-            {
-                name: "manu",
-                age: 38,
-                mvp: 6
-            }
-        ],
-        otherNBATeams: {
-            Jazz: {
-                city: "Salt Lake City",
-                mascot: "Jazz Bear",
-                champsWon: 0
-            },
-            Mavs: {
-                city: "Dallas",
-                mascot: "MavsMan & Champ",
-                champsWon: 1
-            },
-            Pistons: {
-                city: "Detroit",
-                mascot: "Hooper the Horse",
-                champsWon: 3
-            }
-        }
-    }
+// var theSpurs = {
+//         city: "SA",
+//         coach: 'gregg',
+//         wins: 5,
+//         players: ["one", "two", "tim duncan", "manu", "david robinson"],
+//         playerInfo: [
+//             {
+//                 name: "Tim",
+//                 age: 40,
+//                 mvp: 3
+//             },
+//             {
+//                 name: "manu",
+//                 age: 38,
+//                 mvp: 6
+//             }
+//         ],
+//         otherNBATeams: {
+//             Jazz: {
+//                 city: "Salt Lake City",
+//                 mascot: "Jazz Bear",
+//                 champsWon: 0
+//             },
+//             Mavs: {
+//                 city: "Dallas",
+//                 mascot: "MavsMan & Champ",
+//                 champsWon: 1
+//             },
+//             Pistons: {
+//                 city: "Detroit",
+//                 mascot: "Hooper the Horse",
+//                 champsWon: 3
+//             }
+//         }
+//     }
 //console.log(theSpurs.otherNBATeams.Mavs);
 // console.log(theSpurs.playerInfo[0].age);
 // console.log(theSpurs);
@@ -319,13 +319,10 @@ var theSpurs = {
 
 // theSpurs.players[3] = "Ginobli";
 // console.log(theSpurs.players[3]);
-//
-// theSpurs.otherNBATeams["Rockets"];
+
+// var newOtherNBATeam = {city: 'Houston', mascot: 'Clutch the Rocket Bear', champsWon: 2};
+// theSpurs.otherNBATeams.Rockets = newOtherNBATeam;
 // console.log(theSpurs);
-
-// theSpurs.otherNBATeams.Rockets["city"] = "Houston";
-// console.log(theSpurs.otherNBATeams);
-
 
 
 /** Mini Exercises */
@@ -338,11 +335,73 @@ var theSpurs = {
        hint: Each animal should have at least 5 properties (one of them being animalSound);
 */
 
-var zoo = {
-
-
-}
-
+// var zoo = {
+//     name: "Houston Zoo",
+//     city: "Houston",
+//     isOpen: "yes",
+//     ranking: 2,
+//     yearOpened: 1922,
+//     animals: {
+//         Lions: {
+//             hasFur: "yes",
+//             isMammal: "yes",
+//             animalSound: "roar",
+//             canFly: "no",
+//             livingPlace: "Carnivores",
+//             whatSound: function (){
+//                 return `The sound a lion makes is ${this.animalSound}.`;
+//             }
+//         },
+//         Zebra: {
+//             hasFur: "yes",
+//             isMammal: "yes",
+//             animalSound: "braaay",
+//             canFly: "no",
+//             livingPlace: "African forest",
+//             whatSound: function (){
+//                 return `The sound a zebra makes is ${this.animalSound}.`;
+//             }
+//         },
+//         SeaLion: {
+//             hasFur: "yes",
+//             isMammal: "yes",
+//             animalSound: "aarrf",
+//             canFly: "no",
+//             livingPlace: "Sea Lion pool",
+//             whatSound: function (){
+//                 return `The sound a sea lion makes is ${this.animalSound}.`;
+//             }
+//         },
+//         Gorilla: {
+//             hasFur: "yes",
+//             isMammal: "yes",
+//             animalSound: "Waaaah",
+//             canFly: "no",
+//             livingPlace: "Wortham World of Primates",
+//             whatSound: function (){
+//                 return `The sound a gorilla makes is ${this.animalSound}.`;
+//             }
+//         },
+//         Lemur: {
+//             hasFur: "yes",
+//             isMammal: "yes",
+//             animalSound: "Hoooowl",
+//             canFly: "no",
+//             livingPlace: "Wortham World of Primates",
+//             whatSound: function (){
+//                 return `the sound a lemur makes is ${this.animalSound}.`;
+//             }
+//         },
+//
+//     }
+//
+// }
+//
+// console.log(zoo.animals.Lions.whatSound());
+// console.log(zoo.animals.Zebra.whatSound());
+// console.log(zoo.animals.SeaLion.whatSound());
+// console.log(zoo.animals.Gorilla.whatSound());
+// console.log(zoo.animals.Lemur.whatSound());
 
 
 /**  MATH **/
