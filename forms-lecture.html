@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms Lecture</title>
+    </head>
+    <body>
+
+<!--        <form method="POST" action="https://request-inspector.glitch.me/">-->
+
+<!--            <input id="username" name="username" type="text" placeholder="Enter username">-->
+
+<!--            <input type="submit" value="Submit - Input">-->
+<!--            <button>Submit - Button</button>-->
+<!--            -->
+
+<!--        </form>-->
+
+<!--        <form method="GEt" action="https://request-inspector.glitch.me/"></form>-->
+<!--        -->
+<!--            <input id="username" name="user" type="text" placeholder="Enter Username">-->
+<!--        -->
+<!--            <br>-->
+<!--            -->
+<!--            <button>Submit To Your Benevolent Overloards</button>-->
+
+        <form method="POST" action="https://request-inspector.glitch.me/">
+
+        <div>
+            <input id="email" name="email" type="email" placeholder="email" required>
+        </div>
+        <div>
+            <input id="password-input" name="password" type="password" placeholder="password" required>
+            <input id="role-student" name="role" type="radio" value="student">
+            <label for="role-student">
+                Student?
+            </label>
+            <input id="role-instructor" name="role" type="radio" value="instructor">
+            <label for="role-instructor">
+                Instructor
+            </label>
+
+            <input id="isActive" name="isActive" type="checkbox" value="1">
+            <label for="isActive">Is Active?</label>
+        </div>
+            <button>Login</button>
+        </form>
+    </body>
+</html>
