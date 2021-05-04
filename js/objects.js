@@ -108,8 +108,14 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    //
-    //
+    // var books = [
+    //     {title: "APOZIMZ", author: {firstName: "Tsutomu", lastName: "Nihei"}},
+    //     {title: "Shingeki no Kyojin", author: {firstName: "Hajime", lastName: "Isayama"}},
+    //     {title: "Batman: The Killing Joke", author: {firstName: "Alan", lastName: "Moore"}},
+    //     {title: "Berserk", author: {firstName: "Kentaro", lastName: "Miura"}},
+    //     {title: "Tokyo Ghoul", author: {firstName: "Sui", lastName: "Ishida"}}
+    // ]
+
     // console.log(books[0].title);
     // console.log(books[0].author.firstName);
     // console.log(books[0].author.lastName);
