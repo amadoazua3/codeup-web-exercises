@@ -10,8 +10,9 @@ console.log(cube(3));
 
 function cubeRoot(n){
 
-    return Math.cbrt(n).toFixed(4);
+    return Math.cbrt(n);
 
 }
 
-console.log(cubeRoot(3));
+console.log(cubeRoot(6));
+console.log(cubeRoot(cube(5)));
