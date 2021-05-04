@@ -1,4 +1,46 @@
 .fancy-header {
-    color: purple; /* single line comment */
+    color: orange; /* single line comment */
     text-decoration: underline;
+}
+
+.header {
+    color: mediumpurple;
+    text-decoration: underline;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-image: url("https://cdn.contexttravel.com/image/upload/c_fill,q_60,w_2600/v1563195726/production/city/hero_image_26_1563195725.jpg");
+    background-size: cover;
+    overflow: scroll;
+    background-color: whitesmoke;
+}
+
+li {
+    list-style: square;
+}
+
+body{
+    font-family: 'Itim', cursive;
+}
+
+table, th, td {
+    border: 1px solid white;
+    color: white;
+}
+
+table {
+    width: 30%;
+}
+
+p {
+    color: white;
+}
+
+a:visited {
+    color: red;
 }
