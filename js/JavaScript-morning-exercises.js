@@ -32,12 +32,12 @@
 // 5/5/2021 morning exercise
 
 
-function last(input){
-
-    return input.slice(-1);
-}
-
-console.log(last("Good morning everyone"));
+// function last(input){
+//
+//     return input.slice(-1);
+// }
+//
+// console.log(last("Good morning everyone"));
 
 
 
