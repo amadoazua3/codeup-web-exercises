@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Register With Us</title>
+        <link rel="stylesheet" href="css/forms.css">
     </head>
     <body>
+
         <h2>Register with us</h2>
         <form method="POST" action="https://request-inspector.glitch.me/">
             <div>
@@ -13,7 +15,9 @@
             <div>
                 <input id="password-input" name="password" type="password" placeholder="password" required>
             </div><br>
+            <div>
             <textarea name="bio" placeholder="Please tell us about yourself"></textarea><br>
+            </div>
             <h3>How did you hear about us?</h3>
             <div>
                 <input id="Billboard" type="radio" name="selection" value="Billboard"><label for="Billboard"> Billboard</label><br>
@@ -31,7 +35,9 @@
                     <option value="Safari"> Safari</option>
                 </select>
             </div><br>
-            <button>Submit</button>
+            <div>
+                <button>Submit</button>
+            </div>
         </form>
     </body>
 </html>
