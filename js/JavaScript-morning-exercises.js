@@ -39,8 +39,18 @@
 //
 // console.log(last("Good morning everyone"));
 
+// 5/6/2021 morning exercise
 
-
+// function remainder(number, divisor){
+//
+//     if(isNaN(number) || isNaN(divisor)){
+//         return "Argument is not a number/numeric string";
+//     }
+//
+//     return number % divisor;
+// }
+//
+// console.log(remainder("It was me DIO!",10));
 
 
 
