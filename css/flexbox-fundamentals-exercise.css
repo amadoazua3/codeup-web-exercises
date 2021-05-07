@@ -25,7 +25,9 @@ h2, h3 {
     width: 2em;
 }
 
-.border {border: 2px solid black;}
+.border {
+    border: 2px solid black;
+}
 
 .card {
     width: 400px;
@@ -35,14 +37,19 @@ h2, h3 {
     margin: 0 auto;
     /* enter needed declarations here */
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
+    flex-flow: column;
+
 }
 
 section {
     /* enter needed declarations here */
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
 }
 
 section:nth-of-type(1) {
@@ -55,6 +62,7 @@ section:nth-of-type(1) {
 }
 section:nth-of-type(1) div:last-child {
     /* enter needed declarations here */
+    align-self: start;
 
 }
 
@@ -66,11 +74,12 @@ section:nth-of-type(1) div:last-child {
 
 .purple-box:nth-of-type(1) {
     /* enter needed declarations here */
-
+    flex-grow: 2;
 }
 
 .purple-box:nth-of-type(2) {
     /* enter needed declarations here */
+    flex-grow: 1;
 }
 
 .blue-box {
@@ -87,6 +96,7 @@ section:nth-of-type(3) {
 section:nth-of-type(3) h3 {
     /* enter needed declarations here */
     justify-content: flex-end;
+
 }
 
 .orange-circle {
@@ -103,7 +113,7 @@ section:nth-of-type(3) h3 {
     background: brown;
     /* enter needed declarations here */
 
-    justify-content: space-evenly;
+    /*justify-content: space-between;*/
 }
 
 .large-brown-box:nth-of-type(2) {
