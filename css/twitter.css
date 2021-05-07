@@ -83,7 +83,7 @@ a {
 }
 
 .timeline {
-    width: 40%;
+    width: 50%;
     float: left;
     margin-left: .5em;
     margin-right: .5em;
@@ -107,6 +107,21 @@ a {
 .media-image {
     width: 50px;
     margin-top: 1.33em;
+    float: left;
+}
+
+.media-body {
+    float: bottom;
+    width: 100%;
+}
+
+.profile-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-entry {
+    margin: .5em;
 }
 
 .container {
@@ -116,7 +131,9 @@ a {
 .media {
     width: 100%;
     background-color: var(--light-bg);
-    border-bottom: 1px var(--separator-color);
+    /*border-bottom: 1px var(--separator-color);*/
+    border-bottom: 1px solid lightgray;
     padding: .5em;
     overflow: visible;
+
 }
