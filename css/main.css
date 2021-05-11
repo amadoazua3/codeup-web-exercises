@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav {
+
+}
+
+nav a {
+    display: inline-block;
+    padding: 1em;
+}
+
+nav ul li:nth-child(1){
+    margin-left: auto;
+}
+
+ul {
+
+
+}
+
+section {
+    display: flex;
+}
+
+footer {
+    display: flex;
+}
+
+.product-item-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
