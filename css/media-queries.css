@@ -1,20 +1,8 @@
 /* This is for the smaller screen sizes
 /*@media screen and (min-width: 576px){*/
-/*    * {*/
-/*        flex-direction: column;*/
-/*        display: flex;*/
-/*        flex-wrap: wrap;*/
-/*    }*/
 
-    nav-links {
-        background-color: #848487;
-        text-align: center;
-        list-style: none;
-        margin: 0;
-        padding: 20px;
-        border: 10px;
-        height: 1em;
-        /*width: 100%;*/
+    * {
+        box-sizing: border-box;
     }
 
     .alert-info{
@@ -30,61 +18,44 @@
     body {
         background-color: #3B94D9;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        /*padding: 0;*/
         margin: 20px;
     }
     h1{
-        margin:0;
-        padding:0;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
         font-size: xxx-large;
-        justify-content: center;
-        align-items: center;
     }
     nav ul li {
         background-color: #848487;
-        list-style: none;
         margin: 10px;
         padding: 20px;
         border: 0px;
         height: 1em;
         width: 100%;
-        justify-content: center;
-    }
 
-    nav {
-        width: 100%;
+        list-style: none;
+    }
+    nav ul li:nth-child(){
         text-align: center;
     }
-    section *{
-        justify-content: center;
 
-        align-items: center;
+    section *{
         flex-wrap: wrap;
         width: 100%;
-        margin: 0;
-        padding: 0;
-
     }
 
-    .header-img {
-        /*display: flex;*/
-        /*justify-content: center;*/
-        /*width: 100%;*/
+    img {
+
+        width: 100%;
+        height: auto;
     }
 
-    h2 {
-        margin: 0;
-        padding: 0;
-        align-items: flex-start;
+    .sub-section {
+        font-style: italic;
     }
-
-    /*ul {*/
-    /*    margin: 0;*/
-    /*    padding: 0;*/
-    /*}*/
-
-
 
 /*}*/
 
