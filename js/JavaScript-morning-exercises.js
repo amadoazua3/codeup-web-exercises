@@ -69,7 +69,7 @@
 
         // Solution 2 refactored Grady's numbers pyramid
 
-// let numberPyramid = function(start, end){
+// let starPyramid = function(start, end){
 //     for(let i = start; i <= end; i++){
 //         var x = String("* ");
 //         x = x.repeat(i);
@@ -77,4 +77,4 @@
 //     }
 // }
 //
-// numberPyramid(1, 9);
+// starPyramid(1, 9);
