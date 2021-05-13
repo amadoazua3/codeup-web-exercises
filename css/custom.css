@@ -18,3 +18,7 @@ h5.card-header {
 div.card-header {
     background-color: #f7f7f7;
 }
+
+.card {
+    margin-bottom: 1em;
+}
