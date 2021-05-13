@@ -77,4 +77,4 @@
 //     }
 // }
 //
-// starPyramid(1, 9);
+// starPyramid(1, 5);
