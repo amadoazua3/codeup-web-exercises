@@ -10,7 +10,6 @@
         width: 100%;
         border-style: solid;
         border-color: lightgray;
-        margin: 5px;
     }
 
     body {
@@ -25,7 +24,7 @@
     }
     nav ul li {
         background-color: #848487;
-        margin: 10px;
+        margin-bottom: 10px;
         padding: 20px;
         width: 98%;
         text-align: center;
@@ -39,16 +38,14 @@
     section *{
         flex-wrap: wrap;
         width: 98%;
-        margin-left: 10px;
     }
 
     img {
-        width: 100%;
+        width: 98%;
     }
 
     .header-img{
         display: block;
-        margin-left: 10px;
     }
 
     .sub-section {
@@ -56,7 +53,7 @@
     }
 
     footer {
-        margin: 10px;
+        margin-bottom: auto;
     }
 
 @media screen and (min-width: 768px) {
