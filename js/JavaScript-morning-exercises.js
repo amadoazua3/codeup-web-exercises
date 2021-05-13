@@ -52,5 +52,29 @@
 //
 // console.log(remainder("It was me DIO!",10));
 
+// 5/13/2021 morning exercise
 
+// Write a JavaScript program to construct the following pattern, using a nested for loop.
+//  *
+//  * *
+//  * * *
+//  * * * *
+//  * * * * *
 
+        // Solution 1 refactored Laura's number's pyramid
+
+//     for(let i = 1; i <= 5; i++){
+//     console.log("* ".toString().repeat(i));
+// }
+
+        // Solution 2 refactored Grady's numbers pyramid
+
+// let numberPyramid = function(start, end){
+//     for(let i = start; i <= end; i++){
+//         var x = String("* ");
+//         x = x.repeat(i);
+//         console.log(x);
+//     }
+// }
+//
+// numberPyramid(1, 9);
