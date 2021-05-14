@@ -10,7 +10,7 @@ h1 {
 }
 
 
-h5.card-header {
+#Main-header {
     background-color: #227bff;
     color: white;
 }
@@ -19,11 +19,5 @@ h5.card-header {
     margin-bottom: 1em;
 }
 
-/*div.card-footer{*/
-/*    padding-right: 0;*/
-/*    padding-left: 0;*/
-/*    margin: 0;*/
-/*    width: 100%;*/
-/*}*/
 
 
