@@ -21,7 +21,13 @@ div.card-header {
 }
 
 .card {
-    margin-bottom: 1em;
+    /*margin-bottom: 1em;*/
 }
+
+card-footer {
+    width: 100%;
+
+}
+
 
 
