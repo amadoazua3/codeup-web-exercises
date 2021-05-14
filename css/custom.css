@@ -15,19 +15,15 @@ h5.card-header {
     color: white;
 }
 
-div.card-header {
-    background-color: #227bff;
-    color: white;
-}
-
 .card {
-    /*margin-bottom: 1em;*/
+    margin-bottom: 1em;
 }
 
-card-footer {
-    width: 100%;
-
-}
-
+/*div.card-footer{*/
+/*    padding-right: 0;*/
+/*    padding-left: 0;*/
+/*    margin: 0;*/
+/*    width: 100%;*/
+/*}*/
 
 
