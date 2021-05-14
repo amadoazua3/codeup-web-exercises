@@ -16,9 +16,12 @@ h5.card-header {
 }
 
 div.card-header {
-    background-color: #f7f7f7;
+    background-color: #227bff;
+    color: white;
 }
 
 .card {
     margin-bottom: 1em;
 }
+
+
