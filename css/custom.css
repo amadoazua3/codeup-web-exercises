@@ -9,8 +9,12 @@ h1 {
     background: rgba(255, 255, 255, 0.53)
 }
 
+#SizeAndCrustHeader {
+    background-color: #227bff;
+    color: white;
+}
 
-#Main-header {
+#CheeseAndSauceHeader {
     background-color: #227bff;
     color: white;
 }
@@ -19,5 +23,7 @@ h1 {
     margin-bottom: 1em;
 }
 
-
+div.d-none {
+    font-size: xx-large;
+}
 
