@@ -59,6 +59,7 @@
 @media screen and (min-width: 768px) {
 
     body {
+        background-color: pink;
         display: inline-flex;
         flex-direction: row;
         padding: 15px;
@@ -67,8 +68,7 @@
     }
     nav ul li {
         list-style: none;
-        margin: 20px;
-        padding: 30px;
+
         width: 100%;
         display: inline;
     }
@@ -79,8 +79,18 @@
         width: 45%
     }
 
-.hidden-on-desktop{
-    display: none;
-}
+    li {
 
+        justify-content: flex-end;
+
+    }
+
+    .hidden-on-desktop{
+        display: none;
+    }
+
+
+    footer {
+        margin-bottom: auto;
+    }
 }

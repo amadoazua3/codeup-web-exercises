@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    width: 100%;
 }
 
 h1 {
@@ -12,11 +13,19 @@ h1 {
 #SizeAndCrustHeader {
     background-color: #227bff;
     color: white;
+    text-align: left;
 }
 
 #CheeseAndSauceHeader {
     background-color: #227bff;
     color: white;
+    text-align: left;
+}
+
+#ToppingsHeader {
+    background-color: #227bff;
+    color: white;
+    text-align: left;
 }
 
 .card {
@@ -27,3 +36,11 @@ div.d-none {
     font-size: xx-large;
 }
 
+div.card-body {
+    text-align: left;
+}
+
+.form-group {
+    width: 98%;
+
+}
