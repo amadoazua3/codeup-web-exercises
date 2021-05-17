@@ -84,13 +84,12 @@
 // Write a function named secondToLast(arr) that returns the data type of the
 // second to last element of the array parameter. When you call the function, pass in an array of your choosing
 
-
-function secondToLast(arr){
-
-    return typeof arr[arr.length-2];
-
-}
-
-var myArr = [1, "hello", true, undefined, false, "world", 27];
-
-console.log(secondToLast(myArr));
+// var myArr = [1, "hello", true, undefined, false, "world", 27];
+//
+// function secondToLast(arr){
+//
+//     return typeof arr[arr.length-2];
+//
+// }
+//
+// console.log(secondToLast(myArr));
