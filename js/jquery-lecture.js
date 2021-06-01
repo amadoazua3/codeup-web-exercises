@@ -45,3 +45,19 @@ $("#all-caps").hide();
 $("span").hide();
 
 $(".show-me").show();
+
+$("#pink").css("background-color", "pink");
+
+$("#orange").css("background-color", "orange");
+
+console.time("timer");
+$(window).ready(function() {
+
+    console.timeLog("timer");
+    $('#pink').hide();
+});
+
+$(document).ready(function() {
+    console.timeLog("timer");
+    $('#orange').hide();
+});
