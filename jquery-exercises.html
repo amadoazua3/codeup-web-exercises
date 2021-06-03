@@ -14,9 +14,9 @@
         <div class="container codeup" id="container">
             <p class="content codeup" id="content">Godzilla (Japanese: ゴジラ) is a fictional monster, or kaiju, originating from a series of Japanese films. The character first appeared in the 1954 film Godzilla and became a worldwide pop culture icon, appearing in various media, including 32 films produced by Toho, four Hollywood films and numerous video games, novels, comic books and television shows. Godzilla has been dubbed the "King of the Monsters", a phrase first used in Godzilla, King of the Monsters! (1956), the Americanized version of the original film.</p>
         <ul class="list" id="list">
-            <li>Godzilla (1954)</li>
-            <li>Godzilla vs. King Ghidorah (1991)</li>
-            <li>Godzilla vs. SpaceGodzilla (1994)</li>
+            <li id="item-1">Godzilla (1954)</li>
+            <li id="item-2">Godzilla vs. King Ghidorah (1991)</li>
+            <li id="item-3">Godzilla vs. SpaceGodzilla (1994)</li>
         </ul>
         </div>
 
@@ -43,6 +43,23 @@
         // $("li").css("background-color", "rgba(0, 0, 255, 0.3)");
 
         // $("h1, p, li").css("background-color", "rgba(0, 0, 255, 0.3)");
+
+        $('#page-header').click(function() {
+            $("h1").css("background-color", "green");
+        });
+
+        $('#content').dblclick(function(e) {
+            $("p").css("font-size", "18px");
+        });
+
+        $('li').hover(
+            function() {
+                $(this).css('color', 'red');
+            },
+            function() {
+                $(this).css('color', 'black');
+            }
+        );
 
      </script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
