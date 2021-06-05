@@ -47,8 +47,31 @@
             <dd class="visible">Yes, service dogs are legally permitted anywhere in a park that visitors can go. Learn more about service animals in national parks, including the difference between service animals and emotional support animals.
 
             </dd>
-
         </dl>
+
+        <h3 id="sam-houston-heading">Sam Houston National Forest</h3>
+        <ul id="sam-houston">
+            <li>Established on October 13, 1936</li>
+            <li>It is 163,045 acres</li>
+            <li>It spans 3 counties (San Jacinto, Walker, and Montgomery)</li>
+            <li>You can fish, hunt, camp, hike, ride ATVs and bikes</li>
+        </ul>
+        <h3>Redwood National Park</h3>
+        <ul id="redwood-park">
+            <li>Tallest Tree</li>
+            <li>Northern California</li>
+            <li>General Sherman Tree</li>
+            <li>Only 5% Redwoods left</li>
+        </ul>
+        <h3 id="Millers-pond-heading">Miller's Pond</h3>
+        <ul id="millers-pond">
+            <li>Purchased in June 1976</li>
+            <li>It is 42.15 acres! Wow!</li>
+            <li>Park is stocked with fish by Texas Parks and Wildlife Department</li>
+            <li>They have a weight room!? Waaaaa</li>
+        </ul>
+
+        <button id="btn">Click Me</button>
 
         <a href="#" id="toggle-text" >Click Me</a>
 
@@ -57,24 +80,42 @@
         <script>
 
 
-            (function () {
-                "use strict"
+            // (function () {
+            //     "use strict"
+            //
+            //     $(document).ready(function () {
+            //         $('.invisible').css('visibility', 'hidden');
+            //     });
+            //     $('#toggle-text').click(function () {
+            //         $('.invisible').css('visibility', 'visible');
+            //         $('dd').toggle();
+            //     });
+            //
+            //     $(document).ready(function (){
+            //         $('dt').click(function (){
+            //             $(this).toggleClass('highlighted');
+            //         })
+            //     })
+            //
+            // })();
 
-                $(document).ready(function () {
-                    $('.invisible').css('visibility', 'hidden');
-                });
-                $('#toggle-text').click(function () {
-                    $('.invisible').css('visibility', 'visible');
-                    $('dd').toggle();
-                });
-
-                $(document).ready(function (){
-                    $('dt').click(function (){
-                        $(this).toggleClass('highlighted');
-                    })
+            $(document).ready(function(){
+                $('#btn').click(function (){
+                    $('ul').find('li:last').css('background-color', '#FF0');
                 })
+            })
 
-            })();
+            $(document).ready(function(){
+                $('h3').click(function(){
+                    $(this).next().children().css('font-weight', 'bold');
+                })
+            })
+
+            $(document).ready(function(){
+                $('li').click(function(){
+                    $(this).parent().children().first().css('color', 'blue');
+                })
+            })
 
         </script>
     </body>
