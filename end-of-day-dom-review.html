@@ -136,6 +136,7 @@
                      placeholder="Enter Handle">
             </div>
             <div class="d-grid my-2">
+              <input id="redirect-url">
               <button type="button" class="btn btn-primary" id="submitBtn">Submit
               </button>
               <button type="button" class="btn btn-primary" id="resetBtn">Reset
@@ -151,11 +152,11 @@
     <script src="js/jquery-events-lecture.js"></script>
     <script>
 
-        $(document).ready(function (){
-          $('#submitBtn').click(function (){
-            $('#override-bootstrap').css("background-color", "red");
-          });
-        });
+        // $(document).ready(function (){
+        //   $('#submitBtn').click(function (){
+        //     $('#override-bootstrap').css("background-color", "red");
+        //   });
+        // });
 
         $(document).ready(function(){
           $('.card-text').click(function() {
@@ -176,6 +177,30 @@
             $(this).css('font-size', doubleFont);
           });
         });
+
+        // TODO: Change up the submit button event
+        //  -> Add a new input with an id of #redirect-url
+        //  -> Remove the old click events from #submitBtn
+        //  -> When the user clicks #submitBtn, redirect the page to the value of #redirect-url
+        //  -> HINT: You can either add a new input or change the id of an existing input element to #redirect-url to save time
+
+        $(document).ready(function (){
+          $('#submitBtn').click(function (){
+            var url = $('#redirect-url').val();
+            window.location = url;
+          });
+        });
+
+        // TODO: After a 2 second delay (BOM), when the user loads the page, change #main-title to a value of your choosing (change text, background color, what have you)!
+
+        var delay = 2000;
+
+        $(document).ready(function () {
+          var timeoutId = setTimeout(function() {
+              $('#main-title').css('background-color', 'purple').css('font-size', '8em');
+          }, delay);
+        });
+
 
 
 
