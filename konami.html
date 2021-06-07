@@ -6,6 +6,7 @@
   <body>
     <h1>Konami Code</h1>
 
+    <img src="img/konami-code.gif"/>
 
     <script src="jquery/jquery-2.2.4.js"></script>
     <script>
@@ -13,6 +14,10 @@
 
       let konamiArr = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
       let userInput = [];
+
+      $(document).ready(function (){
+        $('img').css('visibility', 'hidden');
+      });
 
       $(document).keyup(function(event){
         console.log(event.keyCode);
@@ -27,6 +32,9 @@
         }
 
         if(konamiArr.length === 0){
+
+          // alert('you have unlimited lives');
+              $('img').css('visibility', 'visible');
 
           // do some cool stuff in here
 
