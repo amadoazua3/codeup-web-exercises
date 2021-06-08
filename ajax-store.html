@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+(function() {
+    "use strict";
+    // TODO: Create an AJAX GET request for the file under data/inventory.json
+
+    let jsonObj = $.ajax("data/inventory.json.txt",
+        {
+            type: 'GET'
+        })
+    console.log(jsonObj);
+    console.log("data/inventory.json.txt");
+
+    let inventory = "data/inventory.json.txt";
+
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+
+    function appendData(data) {
+        let container = $('#products');
+
+        for (var i = 0; i < data.length; i++){
+
+            let div = $('div');
+            let title = data[i].title;
+            let quantity = data[i].quantity;
+            let categories = data[i].categories;
+            let price = data[i].price;
+
+            div.html(data[i].title + ' ' + data[i].quantity + ' ' + data[i].price + ' ' + data[i].categories);
+
+
+
+
+        }
+
+        appendData(inventory);
+
+    }
+})();
+</script>
+
+</body>
+</html>
