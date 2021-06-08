@@ -100,3 +100,19 @@ $('.list-group-item').click(function () {
 })
 
 
+// TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control (be sure to tell them which control was empty)
+
+$(document).ready(function () {
+    $('#submitBtn').click(function () {
+
+        console.log($('#first').val());
+        console.log($('#last').val());
+        console.log($('#handleField').val());
+
+        if($('#first').val() === '' || $('#last').val() === '' || $('#handleField').val() === ''){
+            alert('Please completely fill out the form. Do not leave any section empty!');
+        }
+
+    });
+});
