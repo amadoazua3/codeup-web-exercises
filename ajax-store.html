@@ -20,6 +20,10 @@
 </table>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
 
 <script>
 (function() {
@@ -41,29 +45,25 @@
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
 
-    function appendData(data) {
-        let container = $('#products');
-
-        for (var i = 0; i < data.length; i++){
-
-            let div = $('div');
-            let title = data[i].title;
-            let quantity = data[i].quantity;
-            let categories = data[i].categories;
-            let price = data[i].price;
-
-            div.html(data[i].title + ' ' + data[i].quantity + ' ' + data[i].price + ' ' + data[i].categories);
+    $(document).ready(function () {
+        $.ajax('data/inventory.json').done(function (data) {
+            $.each(data, function (i, data) {
+                $('#insertProducts').append("<tr><th>" + data.title + "</th><th>" + data.quantity + "</th><th>"
+                    + data.price + "</th><th>" + data.categories + "</th></tr>");
+            });
+        });
+    });
 
 
 
-
-        }
-
-        appendData(inventory);
-
-    }
 })();
 </script>
+
+    <br>
+    <div>
+        <input type="button" onclick="history.go(0)" value="Refresh">
+    </div>
+
 
 </body>
 </html>
