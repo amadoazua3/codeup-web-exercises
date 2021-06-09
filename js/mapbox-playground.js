@@ -14,6 +14,30 @@ let marker = setMarker([-95.3698, 29.7604]);
 // call addMapEvent AFTER the marker has been initially set
 addMapEvent(marker);
 
+// create new geocoder and assign to variable
+let geocoder = setGeocoder();
+addGeocoderToMap(geocoder);
+
+// creates and returns a new GeoCoder (search box)
+function setGeocoder() {
+    return new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        marker: false
+    })
+}
+
+function addGeocoderToMap(geocoder) {
+    map.addControl(geocoder);
+
+
+}
+
+function addGeocoderEvent(geocoder){
+    geocoder.on()
+}
+
+
 // creates the marker
 function setMarker(point){
 
