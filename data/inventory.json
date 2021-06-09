@@ -30,5 +30,14 @@
             "tool"
         ],
         "price": 10
+    }, {
+        "title": "Chainsaw",
+        "quantity": 4,
+        "categories": [
+            "tool",
+            "gas",
+            "outdoor"
+        ],
+        "price": 80
     }
 ]
