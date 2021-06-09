@@ -38,7 +38,7 @@ function addGeocoderToMap(geocoder) {
         console.log(event);
         marker.setLngLat(event.result.geometry.coordinates)
 
-        setPopup(event.result.resultPlaceName);
+        setPopup(event.result.place_name);
     })
 
 }
