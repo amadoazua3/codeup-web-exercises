@@ -9,11 +9,27 @@ var map = new mapboxgl.Map({
     zoom: 12
 })
 
-setMarker([-95.3698, 29.7604]);
+// call function to create method and give initial point
+let marker = setMarker([-95.3698, 29.7604]);
+// call addMapEvent AFTER the marker has been initially set
+addMapEvent(marker);
 
+// creates the marker
 function setMarker(point){
 
-    let marker = new mapboxgl.Marker().setLngLat(point).addTo(map);
-
+    return new mapboxgl.Marker().setLngLat(point).addTo(map);
 
 }
+
+// adds event to map that changes location of marker based
+// on where the user clicks
+function addMapEvent() {
+
+    map.on('click', function (event) {
+        console.log(event.lngLat);
+        marker.setLngLat(event.lngLat).addTo(map);
+    })
+
+}
+
+
