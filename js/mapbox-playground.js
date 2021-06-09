@@ -18,6 +18,8 @@ addMapEvent(marker);
 let geocoder = setGeocoder();
 addGeocoderToMap(geocoder);
 
+setPopup("This is my popup!");
+
 // creates and returns a new GeoCoder (search box)
 function setGeocoder() {
     return new MapboxGeocoder({
@@ -27,9 +29,17 @@ function setGeocoder() {
     })
 }
 
+// adds event listener to geocoder and sets new marker location
 function addGeocoderToMap(geocoder) {
-    map.addControl(geocoder);
 
+    // map.addControl(geocoder);
+
+    geocoder.on('result', function (event) {
+        console.log(event);
+        marker.setLngLat(event.result.geometry.coordinates)
+
+        setPopup(event.result.resultPlaceName);
+    })
 
 }
 
@@ -57,3 +67,9 @@ function addMapEvent() {
 }
 
 
+function setPopup(textDetails){
+
+    let popup = new mapboxgl.Popup().setHTML(`<p>${textDetails}</p>`).addTo(map);
+
+    marker.setPopup(popup);
+}
