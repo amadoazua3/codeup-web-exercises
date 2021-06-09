@@ -44,24 +44,24 @@
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
+    // $('#refresh').click(function () {
 
-    $(document).ready(function () {
-        $.ajax('data/inventory.json').done(function (data) {
-            $.each(data, function (i, data) {
-                $('#insertProducts').append("<tr><th>" + data.title + "</th><th>" + data.quantity + "</th><th>"
-                    + data.price + "</th><th>" + data.categories + "</th></tr>");
+        // function refresh () {
+
+            $.ajax('data/inventory.json').done(function (data) {
+                $.each(data, function (i, data) {
+                    $('#insertProducts').append("<tr><th>" + data.title + "</th><th>" + data.quantity + "</th><th>"
+                        + data.price + "</th><th>" + data.categories + "</th></tr>");
+                });
             });
-        });
-    });
-
-
-
+        // }
+    // });
 })();
 </script>
 
     <br>
     <div>
-        <input type="button" onclick="history.go(0)" value="Refresh">
+        <input id="refresh" type="button" onclick="history.go(0)" value="Refresh">
     </div>
 
 
