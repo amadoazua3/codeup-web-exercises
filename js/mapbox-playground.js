@@ -9,3 +9,11 @@ var map = new mapboxgl.Map({
     zoom: 12
 })
 
+setMarker([-95.3698, 29.7604]);
+
+function setMarker(point){
+
+    let marker = new mapboxgl.Marker().setLngLat(point).addTo(map);
+
+
+}
