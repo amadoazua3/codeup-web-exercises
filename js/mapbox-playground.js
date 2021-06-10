@@ -1,4 +1,4 @@
-const mapboxToken = 'pk.eyJ1IjoiYW1hZG9henVhMyIsImEiOiJja3BwbmF6Z3kwZm5uMm9vM3UxN3NlZDhxIn0.A1NW3gQvtIoSPBYC9YJVxg';
+const mapboxToken = MAPBOX_TOKEN;
 
 mapboxgl.accessToken = mapboxToken;
 
