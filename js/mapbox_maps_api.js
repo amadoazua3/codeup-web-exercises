@@ -5,21 +5,16 @@ mapboxgl.accessToken = mapboxToken;
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
-    // center: [-95.6963, 30.3883],
-    center: [-95.60451, 30.36065],
-    zoom: 16
+    center: [-95.6963, 30.3883],
+    zoom: 13
 })
 
-
-// Thai wok in coordinates
-//30.360659429537527, -95.60451675244695
-
 // call function to create method and give initial point
-let marker = getMarker([-95.60451, 30.36065]);
-
+// let marker = getMarker([-95.6963, 30.3883]);
+let marker;
 
 // call addMapEvent AFTER the marker has been initially set
-addMapEvent(marker);
+addMapEvent();
 
 // create new geocoder and assign to variable
 let geocoder = setGeocoder();
@@ -43,6 +38,9 @@ function addGeocoderToMap(geocoder) {
 
     geocoder.on('result', function (event) {
         console.log(event);
+        if(marker){
+            marker.remove();
+        }
         getMarker(event.result.geometry.coordinates).setPopup(getPopup(event.result.place_name));
 
     })
@@ -62,7 +60,13 @@ function addMapEvent() {
 
     map.on('click', function (event) {
         console.log(event.lngLat);
-        marker.setLngLat(event.lngLat).addTo(map);
+        if(!marker){
+            marker = getMarker(event.lngLat);
+        }else{
+            marker.setLngLat(event.lngLat);
+        }
+
+        // marker.setLngLat(event.lngLat).addTo(map);
     })
 
 }
