@@ -28,7 +28,7 @@
 
                 $.ajax('data/blog.json').done(function (data){
                     $.each(data, function(i, data){
-                       $('#posts').append("<h3>" + data.title + "</h3><p>" + data.content + "</p><p>" + data.categories + "</p><p>" + data.date +"</p>")
+                       $('#posts').append("<h3>" + data.title + "</h3><p>" + data.content + "</p><h5>" + data.categories + "</h5><h5>" + data.date +"</h5>")
                     });
                 });
 
