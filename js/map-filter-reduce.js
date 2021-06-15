@@ -38,8 +38,8 @@ const users = [
     }
 ];
 
-// let usersWithLanguages = users.filter(function (users) {
-//     return users.languages.length >= 3;
+// let usersWithLanguages = users.filter(user => {
+//     return user.languages.length >= 3;
 // })
 //
 // console.log(usersWithLanguages);
@@ -68,4 +68,6 @@ const users = [
 // }, "")
 //
 // console.log(longestEmail);
+
+
 
