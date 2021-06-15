@@ -77,4 +77,20 @@ const users = [
 // }, "Your instructors are: ");
 //
 // console.log(nameString);
-
+//
+// let uniqueLanguages = users.reduce((acc, user) => {
+//
+//     let uniqueLang = user.languages.filter((lang) => {
+//
+//         // console.log(lang);
+//         return !acc.includes(lang);
+//
+//     })
+//
+//     acc.push(...uniqueLang);
+//
+//     return acc;
+//
+// }, [])
+//
+// console.log(uniqueLanguages);
