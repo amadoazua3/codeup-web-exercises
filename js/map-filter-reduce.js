@@ -69,5 +69,12 @@ const users = [
 //
 // console.log(longestEmail);
 
-
+// let nameString = users.reduce((accumlator, currentVal, index) => {
+//     if(index === users.length - 1){
+//         return accumlator + currentVal.name + ".";
+//     }
+//     return accumlator + currentVal.name + ", ";
+// }, "Your instructors are: ");
+//
+// console.log(nameString);
 
